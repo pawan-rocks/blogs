@@ -1,4 +1,4 @@
-import { Text } from "@tantuui/react";
+import { LinkText, Text } from "@tantuui/react";
 
 interface SidebarProps {
   open: boolean;
@@ -22,7 +22,7 @@ function Sidebar({ open, onClose }: SidebarProps) {
           <div className="sidebar__contact-card">
             <a href="mailto:pawanjee.srkg@gmail.com">pawanjee.srkg@gmail.com</a>
             <Text as="span" size="xs">+91 8130173033 / +91 9716481062 </Text>
-            <a href="https://www.linkedin.com/in/pawan-mishra-567a0380/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+            <LinkText variant="white" as="a" href="https://www.linkedin.com/in/pawan-mishra-567a0380/" target="_blank" rel="noreferrer">LinkedIn ↗</LinkText>
           </div>
           <Text as="p" size="xs" className="sidebar__location">A-84, UGF, Paryavaran Complex<br />Saket, Delhi — 110030</Text>
         </div>
